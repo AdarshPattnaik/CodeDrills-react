@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/CodeDrills-react/static/css/main.c322a8ce.css",
+    "main.js": "/CodeDrills-react/static/js/main.05831b53.js",
+    "static/media/coding-about.png": "/CodeDrills-react/static/media/coding-about.9de99be9084ab1fd111c.png",
+    "static/media/java.jpg": "/CodeDrills-react/static/media/java.708681e4b028f85531d1.jpg",
+    "static/media/ethical-hacking.jpg": "/CodeDrills-react/static/media/ethical-hacking.f78edf6c2b648df27a4a.jpg",
+    "static/media/anime-girl-coder.png": "/CodeDrills-react/static/media/anime-girl-coder.14c2007d290a0264d7ed.png",
+    "static/media/blockchain.jpg": "/CodeDrills-react/static/media/blockchain.247e9a587137dbb023e7.jpg",
+    "static/media/404error.png": "/CodeDrills-react/static/media/404error.e61f2dd093ea0852f31d.png",
+    "static/media/machine-learning.jpeg": "/CodeDrills-react/static/media/machine-learning.2adceae5dc474bb9f5e0.jpeg",
+    "static/media/artificial-intelligence.jpg": "/CodeDrills-react/static/media/artificial-intelligence.b0752f4401642e017893.jpg",
+    "static/media/python.jpg": "/CodeDrills-react/static/media/python.53e2cbbeab4d93988bae.jpg",
+    "static/media/web-dev.jpg": "/CodeDrills-react/static/media/web-dev.867cf6f9479e74b9c20b.jpg",
+    "static/media/cyber-security.jpg": "/CodeDrills-react/static/media/cyber-security.927906a8d16f56bb9758.jpg",
+    "static/media/algorithms.jpg": "/CodeDrills-react/static/media/algorithms.7b4048e84e41174ebd89.jpg",
+    "static/media/data-science.jpg": "/CodeDrills-react/static/media/data-science.f3d264ff8f6e767dbcfc.jpg",
+    "static/media/android.webp": "/CodeDrills-react/static/media/android.406143a797d788e08c54.webp",
+    "static/media/c.png": "/CodeDrills-react/static/media/c.20acfe9e23086e422815.png",
+    "static/media/data-structure.jpg": "/CodeDrills-react/static/media/data-structure.3425373fe63700a94b8e.jpg",
+    "static/media/cpp.jpg": "/CodeDrills-react/static/media/cpp.d113b4bbfe1bcf7bad6b.jpg",
+    "static/media/next-js.webp": "/CodeDrills-react/static/media/next-js.511192757a45163296cc.webp",
+    "index.html": "/CodeDrills-react/index.html",
+    "main.c322a8ce.css.map": "/CodeDrills-react/static/css/main.c322a8ce.css.map",
+    "main.05831b53.js.map": "/CodeDrills-react/static/js/main.05831b53.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c322a8ce.css",
+    "static/js/main.05831b53.js"
+  ]
+}
