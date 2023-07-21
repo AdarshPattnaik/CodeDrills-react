@@ -27,6 +27,14 @@ const App = () => {
                     element={<Home />} />
 
                 <Route exact
+                    path="/CodeDrills-react"
+                    element={<Home />} />
+
+                <Route exact
+                    path="/CodeDrills-react/"
+                    element={<Home />} />
+
+                <Route exact
                     path="/about"
                     element={<About />} />
 
