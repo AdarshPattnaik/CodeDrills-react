@@ -1,13 +1,614 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* CSS Style-sheet: index.css */
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.light-theme {
+    --main-bg-color: white;
+    --section-title-color: black;
+    --section-description-color: rgba(0, 0, 0, 0.85);
+    --card-bg-color: rgb(245, 245, 245);
+    --card-border-color: rgba(0, 0, 0, 0.175);
+    --form-text-color: rgba(0, 0, 0, 0.92);
+    --form-placeholder-color: rgba(0, 0, 0, 0.45);
+    --input-border-color: rgba(0, 0, 0, 0.15);
+}
+
+.dark-theme {
+    --main-bg-color: rgb(10, 10, 10);
+    --section-title-color: white;
+    --section-description-color: rgba(255, 255, 255, 0.85);
+    --card-bg-color: rgb(15, 15, 15);
+    --card-border-color: rgba(255, 255, 255, 0.175);
+    --form-text-color: rgba(255, 255, 255, 0.92);
+    --form-placeholder-color: rgba(255, 255, 255, 0.45);
+    --input-border-color: rgba(255, 255, 255, 0.15);
+}
+
+#root {
+    background-color: var(--main-bg-color);
+    transition: 1.2s ease-in-out;
+}
+
+/* Navigation Bar */
+.container-fluid .navbar,
+.nav-background {
+    background-color: #39dd2a !important;
+}
+
+.navbar-brand {
+    font-family: 'Nova Square', cursive;
+    font-size: 1.8rem !important;
+    font-weight: bolder;
+    color: rgb(255, 255, 255) !important;
+}
+
+.navbar a {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-nav a:hover {
+    color: rgb(242, 255, 127) !important;
+}
+
+.active {
+    color: white !important;
+    border-bottom: 1px solid white !important;
+}
+
+/* Hamburger */
+.navbar-toggler {
+    border: none !important;
+    color: transparent !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%) brightness(200%);
+}
+
+/* Sections */
+.home-h1 {
+    color: var(--section-title-color);
+    font-family: 'Carter One', cursive;
+    margin-top: 50px;
+    font-size: 3rem;
+    transition: 1.2s ease-in-out;
+}
+
+.brand-name {
+    font-family: 'Carter One', cursive;
+    font-size: 3rem;
+    color: #39dd2a;
+}
+
+.home-h2 {
+    color: var(--section-description-color);
+    font-family: 'Agdasima', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    transition: 1.2s ease-in-out;
+}
+
+.home-img-animation {
+    transform: scaleX(-1);
+    height: 450px;
+    width: 420px;
+    margin-top: 20px;
+    margin-left: 130px;
+    animation-name: homeAnimeGirl;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes homeAnimeGirl {
+    0% {
+        transform: translateY(10px) scaleX(-1);
+    }
+
+    50% {
+        transform: translateY(-10px) scaleX(-1);
+    }
+
+    100% {
+        transform: translateY(10px) scaleX(-1);
+    }
+}
+
+.section-title {
+    color: var(--section-title-color);
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-size: 1.8rem;
+    transition: 1.2s ease-in-out;
+}
+
+.card {
+    background-color: var(--card-bg-color) !important;
+    border: 1px solid var(--card-border-color) !important;
+    transition: 1.2s ease-in-out;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+    color: var(--section-title-color) !important;
+    transition: 1.2s ease-in-out;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: var(--section-description-color) !important;
+    transition: 1.2s ease-in-out;
+}
+
+.msg-area {
+    resize: none;
+}
+
+.submit-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Contact Form */
+.form-label {
+    color: var(--form-text-color);
+    transition: 1.2s ease-in-out;
+}
+
+.form-control {
+    background-color: var(--main-bg-color) !important;
+    color: var(--form-text-color) !important;
+    border: 1px solid var(--input-border-color) !important;
+    transition: 1.2s ease-in-out !important;
+}
+
+.form-control::placeholder {
+    color: var(--form-placeholder-color) !important;
+    transition: 1.2s ease-in-out !important;
+}
+
+/* Modal */
+.modal-header,
+.modal-footer {
+    background-color: #39dd2a !important;
+    border: none !important;
+}
+
+.modal-title {
+    font-family: 'Carter One', cursive;
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal-body {
+    font-family: 'Rubik', sans-serif;
+    background-color: rgb(204, 255, 180);
+}
+
+/* Error Page */
+.error-section {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-img {
+    width: 28vmax;
+    margin-bottom: 2px;
+    animation-name: errorImg;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes errorImg {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* Footer */
+.overall-foot {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    padding: 50px 60px 0px 60px;
+    height: auto;
+    background-color: rgb(15, 20, 14);
+}
+
+.upper-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.acc-visible {
+    display: none;
+}
+
+.accordion-header,
+.accordion-button {
+    background-color: rgb(15, 20, 14) !important;
+    color: white !important;
+}
+
+.accordion-button::after {
+    filter: invert(100%);
+}
+
+.accordion-body {
+    background-color: rgb(15, 20, 14) !important;
+    color: white !important;
+    border: none !important;
+}
+
+.lower-foot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.lower-foot h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    margin: 50px;
+}
+
+.brand-foot,
+.product-foot,
+.partners-foot,
+.address-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+}
+
+.brand-foot {
+    margin-right: 150px;
+}
+
+.foot-name {
+    font-family: 'Nova Square', cursive;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.foot-para {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+
+.foot-titles {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.ul-list {
+    list-style: none;
+}
+
+.ul-list li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+
+.foot-img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.MuiButton-root {
+    min-width: 0px !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    border-radius: 50% !important;
+    margin-right: 15px !important;
+}
+
+.foot-btn {
+    filter: contrast(0%) brightness(200%);
+}
+
+.theme-btn {
+    height: 36px;
+    font-size: 20px !important;
+    color: white !important;
+    border: none !important;
+}
+
+/* ***** Responsiveness ***** */
+/* Home-page: */
+@media only screen and (max-width:1190px) {
+    .home-img-animation {
+        margin-left: 40px;
+    }
+
+    .home-h1,
+    .brand-name {
+        font-size: 2rem;
+    }
+
+    .home-h2 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:1020px) {
+    .home-img-animation {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .home-img-animation {
+        width: 360px;
+        height: 400px;
+        margin-left: 160px;
+    }
+
+    .img-c {
+        display: inline-grid;
+        align-self: center !important;
+        justify-self: center !important;
+    }
+
+    .home-h1 {
+        margin-left: 25px;
+    }
+
+    .resp-cls {
+        justify-content: center !important;
+    }
+
+    .btn-sub {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width:930px) {
+    .home-img-animation {
+        margin-left: 130px;
+    }
+
+    .home-h1 {
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width:880px) {
+    .home-h1 {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width:840px) {
+    .foot-name {
+        font-size: 2rem;
+    }
+
+    .foot-para,
+    .ul-list li {
+        font-size: 11.5px;
+    }
+
+    .brand-foot {
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width:830px) {
+    .home-img-animation {
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+
+    .home-h1,
+    .home-h2 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:730px) {
+
+    .product-foot,
+    .partners-foot,
+    .address-foot {
+        display: none;
+    }
+
+    .acc-visible {
+        display: block;
+        width: 500px;
+    }
+
+    .foot-para,
+    .ul-list li {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .home-img-animation {
+        margin-left: 20px;
+    }
+
+    .upper-foot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand-foot {
+        margin: 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .foot-img {
+        margin: 5px 0px 20px 0px;
+    }
+
+    .foot-para,
+    .lower-foot h1 {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:570px) {
+    .acc-visible {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .home-img-animation {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .home-img-animation {
+        height: 320px;
+        width: 300px;
+    }
+
+    .home-h1,
+    .brand-name {
+        font-size: 1.6rem;
+    }
+
+    .foot-name {
+        margin-top: -15px;
+        font-size: 1.6rem;
+    }
+
+    .acc-visible {
+        width: 85vw;
+    }
+
+    .accordion-button {
+        font-size: 13.5px !important;
+    }
+
+    .lower-foot h1 {
+        margin: 30px 0px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .nav-w {
+        width: 100% !important;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+
+    .navbar-toggler-icon {
+        width: 23px !important;
+    }
+
+    .home-img-animation {
+        height: 260px;
+        width: 230px;
+    }
+
+    .home-h1,
+    .brand-name {
+        font-size: 1.6rem;
+    }
+
+    .home-h1 {
+        margin-top: 0px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .foot-para {
+        width: 85vw;
+    }
+
+    .MuiButton-root {
+        margin: 0px 3px !important;
+    }
+
+    .lower-foot {
+        align-items: baseline;
+    }
+}
+
+@media only screen and (max-width:330px) {
+    .home-img-animation {
+        height: 230px;
+        width: 200px;
+    }
+
+    .home-h1,
+    .brand-name {
+        font-size: 1.4rem;
+    }
+
+    .home-h2 {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .brand-foot {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:285px) {
+    .home-img-animation {
+        height: 200px;
+        width: 170px;
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem !important;
+    }
 }
