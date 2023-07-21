@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CodeDrills-react/static/css/main.c322a8ce.css",
-    "main.js": "/CodeDrills-react/static/js/main.05831b53.js",
+    "main.js": "/CodeDrills-react/static/js/main.1f770eb6.js",
     "static/media/coding-about.png": "/CodeDrills-react/static/media/coding-about.9de99be9084ab1fd111c.png",
     "static/media/java.jpg": "/CodeDrills-react/static/media/java.708681e4b028f85531d1.jpg",
     "static/media/ethical-hacking.jpg": "/CodeDrills-react/static/media/ethical-hacking.f78edf6c2b648df27a4a.jpg",
@@ -22,10 +22,10 @@
     "static/media/next-js.webp": "/CodeDrills-react/static/media/next-js.511192757a45163296cc.webp",
     "index.html": "/CodeDrills-react/index.html",
     "main.c322a8ce.css.map": "/CodeDrills-react/static/css/main.c322a8ce.css.map",
-    "main.05831b53.js.map": "/CodeDrills-react/static/js/main.05831b53.js.map"
+    "main.1f770eb6.js.map": "/CodeDrills-react/static/js/main.1f770eb6.js.map"
   },
   "entrypoints": [
     "static/css/main.c322a8ce.css",
-    "static/js/main.05831b53.js"
+    "static/js/main.1f770eb6.js"
   ]
 }
