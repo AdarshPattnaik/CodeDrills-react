@@ -2,13 +2,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// Importing CSS File:
-import './index.css';
+// Importing Bootstrap:
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+
+// Importing SCSS File:
+import './SCSS/index.scss';
 
 // Importing App Component:
-import App from './App.jsx';
+import App from "./Components/App.jsx";
 
-// Install ReactRouter: npm install react-router-dom
 // Importing BrowserRouter:
 import { BrowserRouter } from 'react-router-dom';
 
