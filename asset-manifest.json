@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/AtmoCloud/static/css/main.f87b4907.css",
-    "main.js": "/AtmoCloud/static/js/main.f3ade657.js",
-    "static/media/bg-main-image.jpg": "/AtmoCloud/static/media/bg-main-image.877d575f6c09e10aa62b.jpg",
-    "static/media/haze-day.mp4": "/AtmoCloud/static/media/haze-day.d3e4347279ce9e73117d.mp4",
-    "static/media/welcome.mp4": "/AtmoCloud/static/media/welcome.624525da51978f56c2a9.mp4",
-    "static/media/snow-day.mp4": "/AtmoCloud/static/media/snow-day.a34f0fee2a4c4f63d986.mp4",
-    "static/media/clear-day.mp4": "/AtmoCloud/static/media/clear-day.a474e6f8dfb40910c396.mp4",
-    "static/media/default-day.mp4": "/AtmoCloud/static/media/default-day.38efb556027a9844a300.mp4",
-    "static/media/rainy-day.mp4": "/AtmoCloud/static/media/rainy-day.e358eaf91c4255f520f3.mp4",
-    "static/media/cloudy-day.mp4": "/AtmoCloud/static/media/cloudy-day.ddccfc6bdc239bb0a5c6.mp4",
-    "static/media/mist-day.mp4": "/AtmoCloud/static/media/mist-day.803226d9e85fcaead16a.mp4",
-    "static/media/smoke-day.mp4": "/AtmoCloud/static/media/smoke-day.6908838d7669484b0a88.mp4",
-    "index.html": "/AtmoCloud/index.html",
-    "main.f87b4907.css.map": "/AtmoCloud/static/css/main.f87b4907.css.map",
-    "main.f3ade657.js.map": "/AtmoCloud/static/js/main.f3ade657.js.map"
+    "main.css": "/AtmoCloud-react/static/css/main.d741c5f4.css",
+    "main.js": "/AtmoCloud-react/static/js/main.b69ee9f4.js",
+    "static/media/bg-main-image.jpg": "/AtmoCloud-react/static/media/bg-main-image.877d575f6c09e10aa62b.jpg",
+    "static/media/haze-day.mp4": "/AtmoCloud-react/static/media/haze-day.d3e4347279ce9e73117d.mp4",
+    "static/media/welcome.mp4": "/AtmoCloud-react/static/media/welcome.624525da51978f56c2a9.mp4",
+    "static/media/snow-day.mp4": "/AtmoCloud-react/static/media/snow-day.a34f0fee2a4c4f63d986.mp4",
+    "static/media/clear-day.mp4": "/AtmoCloud-react/static/media/clear-day.a474e6f8dfb40910c396.mp4",
+    "static/media/default-day.mp4": "/AtmoCloud-react/static/media/default-day.38efb556027a9844a300.mp4",
+    "static/media/rainy-day.mp4": "/AtmoCloud-react/static/media/rainy-day.e358eaf91c4255f520f3.mp4",
+    "static/media/cloudy-day.mp4": "/AtmoCloud-react/static/media/cloudy-day.ddccfc6bdc239bb0a5c6.mp4",
+    "static/media/mist-day.mp4": "/AtmoCloud-react/static/media/mist-day.803226d9e85fcaead16a.mp4",
+    "static/media/smoke-day.mp4": "/AtmoCloud-react/static/media/smoke-day.6908838d7669484b0a88.mp4",
+    "index.html": "/AtmoCloud-react/index.html",
+    "main.d741c5f4.css.map": "/AtmoCloud-react/static/css/main.d741c5f4.css.map",
+    "main.b69ee9f4.js.map": "/AtmoCloud-react/static/js/main.b69ee9f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.f87b4907.css",
-    "static/js/main.f3ade657.js"
+    "static/css/main.d741c5f4.css",
+    "static/js/main.b69ee9f4.js"
   ]
 }
